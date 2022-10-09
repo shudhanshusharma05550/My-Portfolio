@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 87%;
+  scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+nav{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    background: rgb(50, 44, 44);
+    align-items:center;
+    justify-content: space-between;
+
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    transition: all 0.2s ease-out;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: black;
+}
+nav .menu-btn i{
+    color: white;
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#click{
+    display: none;
+}
+.name{
+    color: white;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+@media (max-width : 940px){
+    nav ul{
+        position: fixed;
+        top: 5rem;
+        left: -100%;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    h3{
+        display: none;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        margin: 1rem;
+    }
+    nav ul li a{
+        font-size: 1.5rem;
+        display: block;
+    }
+    nav ul li a:hover{
+        background: none;
+        color: rgb(250, 20, 20);
+    }
+    nav .menu-btn i{
+        margin-right: 1rem;
+        color: white;
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+.intro{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.image-box{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    animation: move 1s 1;
+    opacity: 0.5;
+}
+@keyframes move{
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+
+.img-box{
+    background-color: black;
+    width: 8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    clip-path: circle(40%);
+    transform: translate(-50%, -50%);
+    animation: move1 8s 1;
+    filter: brightness(130%);
+}
+@keyframes move1 {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.name1{
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: white;
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: move2 3s 1;
+}
+@keyframes move2 {
+    0%{
+       left: 0%;
+    }
+    100%{
+        left: 50%;
+    }
+}
+
+.name2{
+    font-weight: 700;
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    font-family:cursive;
+    top: 41%;
+    right: 40%;
+    animation: move3 3s 1;
+}
+@keyframes move3 {
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 40%;
+    }
+}
+.name3{
+    display: flex;
+    list-style: none;
+    font-size: 1rem;
+    padding: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 600;
+    transform: translate(-50%, -50%);
+    animation: move4 5s 1;
+}
+@keyframes move4 {
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.buttons{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button .btn-1 {
+    top: 44%;
+    left: 50%;
+}
+.buttons button{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgb(65, 181, 16);
+    background-color: rgb(65, 181, 16);
+    font-size: 2rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 600;
+    animation: move5 8s 1;
+}
+@keyframes move5{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.buttons button{
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgb(65, 181, 16);
+    background-color: rgb(65, 181, 16);
+    font-size: 2rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 600;
+    animation: move5 8s 1;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: rgb(65, 181, 16);
+}
+.buttons button:hover{
+    color: rgb(65, 181, 16);
+    background-color: white;
+    border: 1px solid white;
+}
+@media (max-width : 800px) and (min-width : 339px){
+    .img-box{
+        background-color: black;
+        width: 4rem;
+        height: 4rem;
+        top: 20%;
+        left: 50%;
+        clip-path: circle(40%);
+        transform: translate(-50%, -50%);
+    }
+    .name1{
+        font-weight: 200;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .name2{
+        font-weight: 300;
+        font-size: 2rem;
+        font-family:cursive;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .name3{
+        display: none;
+    }
+    .buttons{
+        top: 59%;
+        left: 50%;
+    }
+    .buttons button{
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+@media (max-width : 339px){
+    .img-box{
+        background-color: black;
+        width: 3rem;
+        height: 3rem;
+        top: 20%;
+        left: 50%;
+        clip-path: circle(40%);
+        transform: translate(-50%, -50%);
+    }
+    .name1{
+        font-size: 0.5rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .name2{
+        font-weight: 200;
+        font-size: 1rem;
+        font-family:cursive;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .name3{
+        display: none;
+    }
+    .buttons{
+        top: 40%;
+        left: 50%;
+    }
+    .buttons button{
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+@media (max-width : 1200px) and (min-width : 800px){
+    .img-box{
+        background-color: black;
+        width: 4rem;
+        height: 4rem;
+        top: 20%;
+        left: 50%;
+        clip-path: circle(40%);
+        transform: translate(-50%, -50%);
+    }
+    .name1{
+        font-weight: 200;
+        font-size: 1rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .name2{
+        font-weight: 300;
+        font-size: 2rem;
+        font-family:cursive;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .name3{
+        display: flex;
+        list-style: none;
+        font-size: 1rem;
+        padding: 2rem;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        font-weight: 600;
+        transform: translate(-50%, -50%);
+    }
+    .buttons{
+        top: 59%;
+        left: 50%;
+    }
+    .buttons button{
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem;
+        margin: 0.2rem;
+        font-size: 1rem;
+        font-weight: 200;
+    }
+}
+#skills{
+    background-color: black;
+    opacity: 0.8;
+}
+#skills ul{
+    list-style: none;
+    color: white;
+    padding: 2rem;
+}
+#skills ul li{
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    border-radius: 1rem;
+    transition: all 0.2s ease-out;
+    animation: skillss 5s 1;
+}
+@keyframes skillss {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#skills ul li:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.meter{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: black;
+    transition: width 1s;
+}
+.skill-1:hover .meter{
+    width: 90%;
+}
+.skill-2:hover .meter{
+    width: 80%;
+}
+.skill-3:hover .meter{
+    width: 60%;
+}
+.skill-4:hover .meter{
+    width: 50%;
+}
+.skill-5:hover .meter{
+    width: 85%;
+}
+.skill-6:hover .meter{
+    width: 75%;
+}
+.skill-7:hover .meter{
+    width: 90%;
+}
+.skill-8:hover .meter{
+    width: 75%;
+}
+.skill-9:hover .meter{
+    width: 80%;
+}
+.skill-10:hover .meter{
+    width: 50%;
+}
+#projects{
+    background-color: white;
+}
+#projects ul{
+    list-style: none;
+    padding: 2rem;
+}
+#projects ul li{
+    text-decoration: none;
+    padding: 1rem;
+}
+.pro-1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.desc-1{
+    font-weight: 100;
+    font-size: 1rem;
+}
+.btn-3{
+    background-color: dodgerblue;
+    border-radius:  dodgerblue;
+    color: white;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.btn-3:hover{
+    color: black;
+}
+#interns{
+    background-color: black; 
+    display: flex;  
+}
+#interns ul{
+    list-style: none;
+    padding: 2rem; 
+    display: flex;
+    justify-content: space-between;
+}
+#interns ul li{
+    text-decoration: none;
+    padding: 1rem;
+    animation: internss 5s 1;
+}
+@keyframes internss {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#interns .pro-1{
+    font-weight: 600;
+    font-size: 2rem;
+    color: white;
+}
+#interns .desc-1{
+    font-weight: 100;
+    font-size: 1rem;
+    color: white;
+}
+#interns .btn-3{
+    background-color: dodgerblue;
+    border-radius:  dodgerblue;
+    color: white;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#footer {
+    overflow-y: hidden;
+}
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(50, 44, 44);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h1 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 1000px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 17px;
+    color: #cacdd2;
+}
+
+.footerlogo {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.footerlogo li {
+    margin: 0 20px;
+}
+
+.footerlogo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerlogo a i {
+    font-size: 2.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.footerlogo a:hover {
+    color: aqua;
+}
+
+.footerline {
+    width: 50%;
+}
+
+.footerend {
+    font-size: 15px;
+    margin-top: 1%;
+    font-family: verdana;
+}
+
+
+/* --------------------CSS STYLES FOR RESPONSIVE DESIGN------------------ */
+
+@media (max-width: 920px) {
+
+    #footer {
+        height: 25vh;
+        width: 100%;
+    }
+
+    .footer-content p {
+        line-height: 1.5;
+        font-size: 13px;
+    }
+
+    .footerline {
+        width: 90%;
+    }
+
+    .footerend {
+        margin-top: 2%;
+        font-size: 11px;
+    }
+
+}
