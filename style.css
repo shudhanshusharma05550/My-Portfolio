@@ -92,7 +92,7 @@ nav .menu-btn i{
         cursor: pointer;
     }
 }
-.intro{
+#intro{
     position: relative;
     text-align: center;
     color: white;
@@ -294,7 +294,7 @@ a:hover{
         font-weight: 200;
     }
 }
-@media (max-width : 339px){
+@media (max-width : 400px){
     .img-box{
         background-color: black;
         width: 3rem;
@@ -570,12 +570,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .footerlogo li {
-    margin: 0 20px;
+    margin: 0 1rem;
 }
 
 .footerlogo a {
@@ -585,7 +585,7 @@ footer {
 
 .footerlogo a i {
     font-size: 2.1rem;
-    width: 20px;
+    width: 1rem;
     transition: color .4s ease;
 }
 
@@ -602,14 +602,29 @@ footer {
     margin-top: 1%;
     font-family: verdana;
 }
+.img-box1{
+    width: 2rem;
+    height: 2rem;
+}
 
-
+.img-box2{
+    width: 2rem;
+    height: 2rem;
+}
+.img-box3{
+    width: 2rem;
+    height: 2rem;
+}
+.img-box4{
+    width: 2rem;
+    height: 2rem;
+}
 /* --------------------CSS STYLES FOR RESPONSIVE DESIGN------------------ */
 
 @media (max-width: 920px) {
 
     #footer {
-        height: 25vh;
+        height: 38vh;
         width: 100%;
     }
 
@@ -622,9 +637,5 @@ footer {
         width: 90%;
     }
 
-    .footerend {
-        margin-top: 2%;
-        font-size: 11px;
-    }
 
 }
