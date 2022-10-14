@@ -621,10 +621,10 @@ footer {
 }
 /* --------------------CSS STYLES FOR RESPONSIVE DESIGN------------------ */
 
-@media (max-width: 920px) {
+@media (max-width: 300px) {
 
     #footer {
-        height: 38vh;
+        height: 40vh;
         width: 100%;
     }
 
