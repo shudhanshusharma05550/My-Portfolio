@@ -10,9 +10,7 @@
 </head>
 <body>
     <nav>
-        <div class="name">
-            MS
-        </div>
+        <div class="name">MS</div>
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -40,21 +38,28 @@
     </div>
     <div id="skills">
         <ul>
-            <li class="skill-1">C, C++<div class="meter"></div></li>
-            <li class="skill-2">Java<div class="meter"></div></li>
-            <li class="skill-3">Python<div class="meter"></div></li>
-            <li class="skill-4">VB.NET<div class="meter"></div></li>
-            <li class="skill-5">SQL<div class="meter"></div></li>
-            <li class="skill-6">RDBMS<div class="meter"></div></li>
-            <li class="skill-7">OOPs<div class="meter"></div></li>
-            <li class="skill-8">Data Structures<div class="meter"></div></li>
-            <li class="skill-9">HTML, CSS<div class="meter"></div></li>
-            <li class="skill-10">Java Script, PHP<div class="meter"></div></li>
+            <li class="grid-item" id="skill-1">C, C++<div class="meter"></div></li>
+            <li class="grid-item" id="skill-2">Java<div class="meter"></div></li>
+            <li class="grid-item" id="skill-3">Python<div class="meter"></div></li>
+            <li class="grid-item" id="skill-4">VB.NET<div class="meter"></div></li>
+            <li class="grid-item" id="skill-5">SQL<div class="meter"></div></li>
+            <li class="grid-item" id="skill-6">RDBMS<div class="meter"></div></li>
+            <li class="grid-item" id="skill-7">OOPs<div class="meter"></div></li>
+            <li class="grid-item" id="skill-8">Data Structures<div class="meter"></div></li>
+            <li class="grid-item" id="skill-9">HTML, CSS<div class="meter"></div></li>
+            <li class="grid-item" id="skill-10">Java Script, PHP<div class="meter"></div></li>
         </ul>
     </div>
     <div id="projects">
         <h2 class="pro-1"><center>Projects</center></h2>
         <ul>
+            <li class="pro-1">Smart Attendance System
+                <p class="desc-1">
+                    Smart Attendance System is an software, that used as attendance system in faster way.This application has made upon python languages, and used a lot of modules as numpy, cv2, xlsxwriter and many more.
+                    This application used for taking attendance using AI by recognising the face of candidates if they are registered with the system.
+                </p>
+                <button class="btn-3"><a href="https://github.com/shudhanshusharma05550/Smart_Attendance_System" target="new">link</a></button>
+            </li>
             <li class="pro-1">Employee Tracking System
                 <p class="desc-1">
                     In this application, if you owe a company with a high scale of employees under your supervision. You can use this application to track their records by using some basic operations like to add details of new employee, to delete, to update and to check the records also. <br>
@@ -75,9 +80,13 @@
                 </p>
                 <button class="btn-3"><a href="" target="new">link</a></button>
             </li>
-            <li class="pro-1">and many more....
-                
+            <li class="pro-1">Library Management System
+                <p class="desc-1">
+                    This projects has been completed by implementing the knowledge of Python which is used for keep track on incoming and outgoing of books.
+                </p>
+                <button class="btn-3"><a href="https://github.com/shudhanshusharma05550/Library_System" target="new">link</a></button>
             </li>
+            
         </ul>
     </div>
     <div id="interns">
@@ -88,6 +97,7 @@
                     Role  : Society Member <br>
                     Timing: 15March,2022-currently working <br>
                 </p>
+                <button class="btn-3"><a href="" target="_blank">link</a></button>
             </li>
             
             <li class="pro-1">HashHackCode
@@ -104,28 +114,36 @@
                     Timing: 7Aug,2022-22Aug,2022 <br>
                     Paid  : Yes <br>
                 </p>
+                <button class="btn-3"><a href="" target="_blank">link</a></button>
             </li>
         </ul>
     </div>
     <section id="footer">
         <footer>
             <div class="footer-content">
-                <h2><b>PORTFOLIO</b></h2>
-                <h2> <b> Contact No: +91-8920915572 </b> </h2>
-                <h2> <b> Location  : New Delhi </b> </h2>
-                
+                <h2><b><u>Contact Form</u></b></h2>
+                <section id="contact-form">
+                    <form action="form.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name"><br><br>
+                        <input type="numeric" name="phone" placeholder="Enter your number"><br><br>
+                        <input type="text" name="mail" placeholder="Enter your mail id"><br><br>
+                        <input type="textarea" name="query" placeholder="Enter your message"><br><br>
+                        <button type="submit" name="submit">SEND MESSAGE</button>
+                    </form>
+                </section>
+            
 
                 <ul class="footerlogo">
                     <li> <a href="https://www.instagram.com/?hl=en" target="_blank"><i
-                                class='bx bxl-youtube'><img src="https://www.adverthia.com/wp-content/uploads/2020/02/instagram-logo-png-transparent-background-1024x1024-1.png" alt="instagram" class="img-box1"></i></a></li>
+                                class='bx bxl-youtube'><img src="instagram-logo-png-transparent-background-1024x1024-1.png" alt="instagram" class="img-box1"></i></a></li>
                     <li> <a href="https://github.com/shudhanshusharma05550" target="_blank"><i
-                                class='bx bxl-instagram-alt'><img src="https://cdn0.iconfinder.com/data/icons/social-line-transparent/50/Github-line-transparent-128.png" alt="github" class="img-box2"></i></a></li>
+                                class='bx bxl-instagram-alt'><img src="github_image.png" alt="github" class="img-box2"></i></a></li>
                     
                     <li> <a href="https://www.linkedin.com/in/monu-sharma-a01b17223/" target="_blank"><i
-                                class='bx bxs-envelope size'><img src="https://i.pinimg.com/originals/54/98/55/5498550a7fca10fe79bcc8171fd8dea7.png" alt="mail" class="img-box3"></i></a></li>
+                                class='bx bxs-envelope size'><img src="linkedin.png" alt="mail" class="img-box3"></i></a></li>
                 
                     <li> <a href="mailto:monusharma59663@gmail.com" target="_blank"><i
-                                class='bx bxs-envelope size'><img class="img-box4" src="https://th.bing.com/th/id/R.5bcdfa7164dd91bd8978f52f0caba8ab?rik=S3KNuKpll88O9A&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgmail_logo%2fgmail_logo_PNG7.png&ehk=eCetbUir1afKzKEi7Q%2bsGXw7f76M%2bzx8JZTCxgdZwbc%3d&risl=&pid=ImgRaw&r=0" alt="mail"></i></a></li>
+                                class='bx bxs-envelope size'><img class="img-box4" src="mail.png" alt="mail"></i></a></li>
                     
                 </ul>
 

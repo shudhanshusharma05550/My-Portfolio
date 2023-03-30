@@ -405,7 +405,7 @@ a:hover{
     transition: all 0.2s ease-out;
     animation: skillss 5s 1;
 }
-@keyframes skillss {
+@keyframes skills {
     0%{
         opacity: 0;
     }
@@ -425,34 +425,34 @@ a:hover{
     background-color: black;
     transition: width 1s;
 }
-.skill-1:hover .meter{
+#skill-1:hover .meter{
     width: 90%;
 }
-.skill-2:hover .meter{
+#skill-2:hover .meter{
     width: 80%;
 }
-.skill-3:hover .meter{
+#skill-3:hover .meter{
     width: 60%;
 }
-.skill-4:hover .meter{
+#skill-4:hover .meter{
     width: 50%;
 }
-.skill-5:hover .meter{
+#skill-5:hover .meter{
     width: 85%;
 }
-.skill-6:hover .meter{
+#skill-6:hover .meter{
     width: 75%;
 }
-.skill-7:hover .meter{
+#skill-7:hover .meter{
     width: 90%;
 }
-.skill-8:hover .meter{
+#skill-8:hover .meter{
     width: 75%;
 }
-.skill-9:hover .meter{
+#skill-9:hover .meter{
     width: 80%;
 }
-.skill-10:hover .meter{
+#skill-10:hover .meter{
     width: 50%;
 }
 #projects{
@@ -639,4 +639,71 @@ footer {
     }
 
 
+}
+/*-------------------------------ConTact Form  -------------------*/
+#contact-form {
+    top: 40%;
+    height: 82vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url('/image/background.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form {
+    position: relative;
+    top: 8%;
+    margin: auto;
+    height: 50%;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+form input {
+    text-align: center;
+    height: 4%;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    transition: 0.5s;
+}
+form input:hover{
+    transition: 0.5s;
+    border-radius: 50px;
+}
+form textarea {
+    text-align: center;
+    height: 4%;
+    width: 50%;
+    border-radius: 10px;
+    padding: 20px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    transition: 0.5s;
+}
+#query{
+    height: 50%;
+}
+form textarea:hover{
+    transition: 0.5s;
+    border-radius: 50px;
+}
+form button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    transition: 0.5s;
+}
+
+form button:hover{
+    transition: 0.5s;
+    border-radius: 50px;
 }
