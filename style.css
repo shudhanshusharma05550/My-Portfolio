@@ -56,25 +56,18 @@ nav .menu-btn i{
 }
 
 @media (max-width : 940px){
-    nav ul{
-        position: fixed;
-        top: 5rem;
-        left: -100%;
-        background-color: black;
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
-    h3{
+    .name{
         display: none;
+    }
+    nav ul{
+        display: flex;
     }
     #click:checked ~ ul{
         left: 0%;
         transition: all 0.3s ease;
     }
     nav ul li{
-        margin: 1rem;
+        margin: 2rem;
     }
     nav ul li a{
         font-size: 1.5rem;
@@ -89,6 +82,66 @@ nav .menu-btn i{
         color: white;
         display: block;
         font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+@media (max-width : 648px){
+    .name{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        margin: 1rem;
+    }
+    nav ul li a{
+        font-size: 1rem;
+        display: block;
+    }
+    nav ul li a:hover{
+        background: none;
+        color: rgb(250, 20, 20);
+    }
+    nav .menu-btn i{
+        margin-right: 1rem;
+        color: white;
+        display: block;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}
+@media (max-width : 443px){
+    .name{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+    nav ul li{
+        margin: 0.5rem;
+    }
+    nav ul li a{
+        font-size: 0.5rem;
+        display: block;
+    }
+    nav ul li a:hover{
+        background: none;
+        color: rgb(250, 20, 20);
+    }
+    nav .menu-btn i{
+        margin-right: 1rem;
+        color: white;
+        display: block;
+        font-size: 0.5rem;
         cursor: pointer;
     }
 }
@@ -171,6 +224,12 @@ nav .menu-btn i{
     right: 40%;
     animation: move3 3s 1;
 }
+@media (max-width : 940px){
+    .name2{
+        right: 20%;
+    }
+}
+
 @keyframes move3 {
     0%{
         right: 0%;
